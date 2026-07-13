@@ -1411,3 +1411,53 @@
 # l = [1,2,3,4,5]
 # l[0] = 11
 # print(l)    # 11,2,3,4
+
+# print positive and nagitive element in list 
+
+# l = [-11,21,13,18,-55,-44,58]
+# print("This is a possitive value's :")
+# for i in l:
+#     if i >= 0:
+#         print(i)
+# print("It's a nagative value's :") 
+# for i in l:
+#     if i <= -1:
+#         print(i)
+
+# Using range function
+
+# a = [-1,-2,2,4,3,5,-6,-4]
+# print("This is a positive value :")
+# for i in range(len(a)):
+#     if a[i] >= 0:
+#         print(a[i])
+# print("Nagative value :")
+# for i in range(len(a)):
+#     if a[i] <= -1:
+#         print(a[i])
+
+
+# l = [-11,21,13,18,-55,-44,58]
+# for i in l:
+#     if i >= 0:
+#         print(f"Possitive value's are :- {i}")
+#     else :
+#         print(f'Its nagative value :- {i}')
+
+# mean of list elements 
+
+# a = [11,22,33,44,55,66,77,88]
+# sum = 0
+# for i in a:
+#     sum = sum + i
+# print(sum/len(a))
+
+# a = [1,2,3,4,5,6,7]
+# sum = 0
+# for i in range(len(a)):
+#     sum = sum + a[i]
+# print(sum/len(a))    # sum = 28, mean = 4.0
+# print(sum//len(a))   # floar = 4
+
+# Find the greatest element 
+
