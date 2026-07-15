@@ -1459,5 +1459,16 @@
 # print(sum/len(a))    # sum = 28, mean = 4.0
 # print(sum//len(a))   # floar = 4
 
-# Find the greatest element 
+# Find the greatest element and print index too
+
+# a = [11,13,16,21,12,31,22,27]
+# largest = a[0]
+# index = 0
+# for i in range(len(a)):
+#     if a[i] > largest:    
+#         largest = a[i]   #a[i] ke under value aa rahi he
+#         index = i     # i ke under index aa rahi he 
+# print(f"Your largest number is :- {largest} and index is {index}")
+
+# Find the second greatest element 
 
