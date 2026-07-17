@@ -1472,3 +1472,12 @@
 
 # Find the second greatest element 
 
+l = [21,13,22,10,17,33]
+largest = l[0]
+sec_largest = l[0]
+for i in l:
+    if i > largest:     # i ki value largest se badi honi chahiye , jiski value jyada hogi to uske pahele wali value second lagrgest value ho jayegi
+        sec_largest = largest    # to woh yaha par aayegi , and second largest value = largest value
+        largest = i    # and wahi largest value = i de diya he 
+print(f"{sec_largest} is a second largest value")
+print(f"{largest} is a largest value")
