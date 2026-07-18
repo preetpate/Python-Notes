@@ -1472,12 +1472,48 @@
 
 # Find the second greatest element 
 
-l = [21,13,22,10,17,33]
-largest = l[0]
-sec_largest = l[0]
-for i in l:
-    if i > largest:     # i ki value largest se badi honi chahiye , jiski value jyada hogi to uske pahele wali value second lagrgest value ho jayegi
-        sec_largest = largest    # to woh yaha par aayegi , and second largest value = largest value
-        largest = i    # and wahi largest value = i de diya he 
-print(f"{sec_largest} is a second largest value")
-print(f"{largest} is a largest value")
+# l = [21,13,22,10,17,33,25]
+# largest = l[0]
+# sec_largest = l[0]
+# for i in l:
+#     if i > largest:     # i ki value largest se badi honi chahiye , jiski value jyada hogi to uske pahele wali value second lagrgest value ho jayegi
+#         sec_largest = largest    # to woh yaha par aayegi , and second largest value = largest value
+#         largest = i    # and wahi largest value = i de diya he 
+#     elif i > sec_largest:
+#         sec_largest = i
+# print(f"{sec_largest} is a second largest value")
+# print(f"{largest} is a largest value")
+
+# find the third greatest element
+
+# l = [21,13,22,10,17,33,25]
+# largest = l[0]
+# sec_largest = l[0]
+# third_largest = l[0]
+# for i in l:
+#     if i > largest:
+#         third_largest = sec_largest
+#         sec_largest = largest
+#         largest = i
+#     elif i > sec_largest:
+#         third_largest = sec_largest
+#         sec_largest = i
+#     else :
+#         third_largest = i
+# print(f"{third_largest} it's third largest value ")
+# print(f"{sec_largest} it's a second largest value ")
+# print(f"{largest} it's largest value ")
+
+# check if list sorted or not
+
+# a = [11,31,21,15,32,12,7,15]
+a = [1,2,3,4,5]
+
+for i in range(len(a)-1):
+    if a[i] < a[i + 1]:
+        continue
+    else :
+        print("This list are not sorted")
+        break
+else :
+    print("Your list is sorted")
