@@ -1507,13 +1507,22 @@
 # check if list sorted or not
 
 # a = [11,31,21,15,32,12,7,15]
-a = [1,2,3,4,5]
+# a = [1,2,3,4,5]
 
-for i in range(len(a)-1):
-    if a[i] < a[i + 1]:
-        continue
-    else :
-        print("This list are not sorted")
-        break
-else :
-    print("Your list is sorted")
+# for i in range(len(a)-1):
+#     if a[i] < a[i + 1]:
+#         continue
+#     else :
+#         print("This list are not sorted")
+#         break
+# else :
+#     print("Your list is sorted")
+
+
+# Tuple Power
+
+a = (1,2,3,3,4,5,5,5,6)
+b = a
+print(b)
+print(b[2])   # 3
+print(b[1])   # 2
