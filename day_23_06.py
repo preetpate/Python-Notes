@@ -1521,8 +1521,58 @@
 
 # Tuple Power
 
-a = (1,2,3,3,4,5,5,5,6)
-b = a
-print(b)
-print(b[2])   # 3
-print(b[1])   # 2
+# a = (1,2,3,3,4,5,5,5,6,7.7,8.9, print() , "Hello")
+# b = a
+# print(b)
+# print(b[2])   # 3
+# print(b[1])   # 2
+
+
+# a = (1,2,3,4,5,5.5,7.7, print() , "Preet")
+
+# for i in a:
+#     print(i)     # print() ki jagah None print hoga beacuse print is function
+
+# for i in range(len(a)):
+#     print(a[i])
+
+# type of tuple 
+# index
+# count
+
+# a = (2,5,3,4,5,5,2,7,5,1,6,8,"Preet")
+
+# index = a.index(5)
+# print(index)    # 1
+
+# count = a.count(5)
+# print(count)    # 4 
+
+
+# unpacking tuple
+
+# a , b , c , d = (1,2,3,4)
+# print(a)   # 1
+# print(b)   # 2
+# print(c)   # 3
+# print(d)   # 4
+
+# a,b,c,d = [6,4,7,9]
+# print(type(a))   # 6
+# print(b)   # 4
+# print(c)   # 7
+# print(d)   # 9
+
+
+# Important Rule
+# Python me tuple ko parentheses nahi, comma banata hai.
+
+# a = (1)   # yeh unpack ho gya he iss liye int aa raha he 
+# print(type(a))    # int
+# b = (1,)   # , lagane se python samj jayega ki isko unpack nahi karna chahte ho isse rakhna chahte ho iss liye tuple
+# print(type(b))   # tuple
+
+# a = ("a")
+# print(type(a))
+# b = ("b",)
+# print(type(b))
