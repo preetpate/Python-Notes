@@ -1520,6 +1520,9 @@
 
 
 # Tuple Power
+# tuple i imutable
+# you can include the duplicate value 
+# it's ordered 
 
 # a = (1,2,3,3,4,5,5,5,6,7.7,8.9, print() , "Hello")
 # b = a
@@ -1576,3 +1579,46 @@
 # print(type(a))
 # b = ("b",)
 # print(type(b))
+
+
+# Set Power
+# Set is mutable.
+# in the set not duplicate value , it must be giving unique value
+# it's unordered
+# set index ko access nahi kar sakta
+# it's store some data not everything number , string , tuple
+
+# a = {1,2,3,4,5,5,6,2,1}
+# print(a)     # 1,2,3,4,5,6   yeh unique value hi deta he 
+
+
+# Hase function
+# in the hase everytime you run the code the value come to the different
+
+# a = hash("Preet")
+# print(a)      # -5953056078961408377
+
+# b = hash("Tirht")
+# print(b)     # -2980250554292374402
+
+# c = hash(12)
+# print(c)    # 12 kyoki hash function intger par work nahi karta, tuple use karna padega
+
+# d = hash((1,3,4,2,2))
+# print(d)     #-1497858430303537188
+
+# a = {1,2,3,4,5,6}
+# for i in a:
+#     print(i)  
+
+# jab aap chote positive numbers (jaise 1, 2, 3, 4, 5...) use karte hain, toh Python unka hash code unhi ki numeric value ko maan leta hai:
+# hash(1) = 1, hash(2) = 2 , hash(3) = 3
+
+# a = {1,2,6,3,2,4,5,3}
+# for i in a:
+#     print(i)   # 1,2,3,4,5,6
+
+# a = {1,3,2,"Preet",4,4,3,6,7}
+# for i in a:
+#     print(i)   # 1,2,3,46,7,preet , yeh jitni bar run karoge normal changes dikhega sirf preet me upper ja sakta he niche aa sakta he 
+
