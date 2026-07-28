@@ -1614,6 +1614,8 @@
 # jab aap chote positive numbers (jaise 1, 2, 3, 4, 5...) use karte hain, toh Python unka hash code unhi ki numeric value ko maan leta hai:
 # hash(1) = 1, hash(2) = 2 , hash(3) = 3
 
+# Set traversing 
+
 # a = {1,2,6,3,2,4,5,3}
 # for i in a:
 #     print(i)   # 1,2,3,4,5,6
@@ -1621,4 +1623,45 @@
 # a = {1,3,2,"Preet",4,4,3,6,7}
 # for i in a:
 #     print(i)   # 1,2,3,46,7,preet , yeh jitni bar run karoge normal changes dikhega sirf preet me upper ja sakta he niche aa sakta he 
+# random value dega , preet last bhi aa sakta he , uske upper bhi aa sakta he 
 
+
+# Set method
+
+# add
+# a = {1,2,3,4}
+# a.add(5)
+# print(a)   # 1,2,3,4,5
+# a.add(11)
+# print(a)   # 1,2,3,4,5
+
+# a = {1,2,3,4,5}
+# a.remove(3)
+# print(a)   # 1,2,4,5
+# a.remove(4)
+# print(a)   # 1,2,5
+# a.add(3)
+# print(a)   # 1,2,3,5
+
+# a = {1,2,3,4,5}
+# a.discard(3)
+# print(a)   # 1,2,4,5
+# a.discard(1)
+# print(a)   # 2,4,5
+
+# a = {1,2,3,4,5,6,7}
+# a.pop()
+# print(a)     # 2,3,4,5,6,7,      iss me pop hash value ko dekhta he iss liye small value pop hogi
+# a.pop()
+# print(a)     # 3,4,5,6,7
+
+# a = {8,1,2,3,4,5,6,7}
+# a.pop()
+# print(a)    # 2,3,4,5,6,7,8
+# # a.pop(4)    # is me aap value nahi pass kar sakte
+# a.pop()
+# print(a)   # 3,4,5,6,7,8
+
+# a = {1,2,3,4,5,6,7}
+# a.clear()
+# print(a)   # set()
