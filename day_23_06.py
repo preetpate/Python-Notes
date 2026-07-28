@@ -1665,3 +1665,22 @@
 # a = {1,2,3,4,5,6,7}
 # a.clear()
 # print(a)   # set()
+
+
+# Set operation
+
+a = {1,2,3,4}
+b = {3,4,5,6,7,8,2}
+union_set = a.union(b)
+print(union_set)    # 1,2,3,4,5,6,7,8
+
+intersection_set = a.intersection(b)
+print(intersection_set)    # 2,3,4    , yeh comman value ko print karta he 
+
+different_set = a.difference(b)
+print(different_set)    # 1 , check karta he pahele ki (a) me jo value he woh (b) he he ya nahi agar nahi he to usko print kar dega
+different_set = b.difference(a)
+print(different_set)   # 8,5,6,7   , yeh unordered he iss liye o/p 8,5,6,7 aaya 5,6,7,8 nahi 
+
+symmetric_set = a.symmetric_difference(b)
+print(symmetric_set)    # 1,5,6,7,8   , jo value comman hoti hewoh nikal jati he our baki ki value ko print kar deta he 
