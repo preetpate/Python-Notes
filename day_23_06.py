@@ -1669,18 +1669,40 @@
 
 # Set operation
 
-a = {1,2,3,4}
-b = {3,4,5,6,7,8,2}
-union_set = a.union(b)
-print(union_set)    # 1,2,3,4,5,6,7,8
+# a = {1,2,3,4}
+# b = {3,4,5,6,7,8,2}
+# union_set = a.union(b)
+# print(union_set)    # 1,2,3,4,5,6,7,8
+# union_set = b.union(a)
+# print(union_set)    # 1,2,3,4,5,6,7,8
+# p = a | b
+# print(p)         # 1,2,3,4,5,6,7,8
+# p = b | a
+# print(p)         # 1,2,3,4,5,6,7,8
 
-intersection_set = a.intersection(b)
-print(intersection_set)    # 2,3,4    , yeh comman value ko print karta he 
+# intersection_set = a.intersection(b)
+# print(intersection_set)    # 2,3,4    , yeh comman value ko print karta he 
+# intersection_set = b.intersection(a)
+# print(intersection_set)    # 2,3,4
+# p = a & b
+# print(p)       # 2,3,4
+# p = b & a
+# print(p)       # 2,3,4
 
-different_set = a.difference(b)
-print(different_set)    # 1 , check karta he pahele ki (a) me jo value he woh (b) he he ya nahi agar nahi he to usko print kar dega
-different_set = b.difference(a)
-print(different_set)   # 8,5,6,7   , yeh unordered he iss liye o/p 8,5,6,7 aaya 5,6,7,8 nahi 
+# different_set = a.difference(b)
+# print(different_set)    # 1 , check karta he pahele ki (a) me jo value he woh (b) he he ya nahi agar nahi he to usko print kar dega
+# different_set = b.difference(a)
+# print(different_set)   # 8,5,6,7   , yeh unordered he iss liye o/p 8,5,6,7 aaya 5,6,7,8 nahi 
+# p = a - b
+# print(p)     # 1
+# p = b - a 
+# print(p)     # 8,5,6,7
 
-symmetric_set = a.symmetric_difference(b)
-print(symmetric_set)    # 1,5,6,7,8   , jo value comman hoti hewoh nikal jati he our baki ki value ko print kar deta he 
+# symmetric_set = a.symmetric_difference(b)
+# print(symmetric_set)    # 1,5,6,7,8   , jo value comman hoti he, woh nikal jati he our baki ki value ko print kar deta he 
+# symmetric_set = b.symmetric_difference(a)
+# print(symmetric_set)    # 1,5,6,7,8
+# p = a ^ b
+# print(p)       # 1,5,6,7,8
+# p = b ^ a
+# print(p)       # 1,5,6,7,8
