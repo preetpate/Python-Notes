@@ -1697,6 +1697,10 @@
 # print(p)     # 1
 # p = b - a 
 # print(p)     # 8,5,6,7
+# a -= b
+# print(a)   # 1
+# b -= a
+# print(b)     # 5,6,7,8
 
 # symmetric_set = a.symmetric_difference(b)
 # print(symmetric_set)    # 1,5,6,7,8   , jo value comman hoti he, woh nikal jati he our baki ki value ko print kar deta he 
@@ -1706,3 +1710,31 @@
 # print(p)       # 1,5,6,7,8
 # p = b ^ a
 # print(p)       # 1,5,6,7,8
+
+
+# Dictionary Power : dictionary me key and value ka pair hota he , or dict me key change nahi ho sakti but value ko change akr sakte he 
+# Dictionary is mutable 
+# key must be unique , but you can have duplicate in values
+# dictionary follows insertion order 
+# dictionary can store different type of key value, like intergers , string , list or even another dictionary
+
+# a = {}
+# print(type(a))    # dict
+# a = {1}
+# print(type(a))    # set
+# a = {1: "Preet"}
+# print(type(a))    # dictionary
+# a = {1 : "Tirht" , 2 : 18}
+# print(type(a))    # dict
+# a = {1 : "Preet" , 2 : "Tirth" , "Hello" : "Hyy"}    # aap string me bhi key bana sakte ho 
+# print(type(a))    # dict
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# print(a[10])   # 100    , iss me index work nahi karti means [0 ,1 , 2] yeh work nahi karti he , value print karne ke liye key use karni padti he 
+# print(a[20])   # 200
+# print(a[30])   # 300
+# print(a[40])   # 400
+
+student = {"Name" : "Preet" , "Age" : 19}
+print(student["Name"])   # Preet
+print(student["Age"])    # 19
