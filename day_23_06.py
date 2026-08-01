@@ -1729,12 +1729,67 @@
 # a = {1 : "Preet" , 2 : "Tirth" , "Hello" : "Hyy"}    # aap string me bhi key bana sakte ho 
 # print(type(a))    # dict
 
+# student = {"Name" : "Preet" , "Age" : 19}
+# print(student["Name"])   # Preet
+# print(student["Age"])    # 19
+
 # a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
-# print(a[10])   # 100    , iss me index work nahi karti means [0 ,1 , 2] yeh work nahi karti he , value print karne ke liye key use karni padti he 
+# print(a[10])   # 100, iss me index work nahi karti means [0 ,1 , 2] yeh work nahi karti he , value print karne ke liye key use karni padti he 
 # print(a[20])   # 200
 # print(a[30])   # 300
 # print(a[40])   # 400
 
-student = {"Name" : "Preet" , "Age" : 19}
-print(student["Name"])   # Preet
-print(student["Age"])    # 19
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# a[10] = 1000     # updating 
+# a[20] = 2500     # updating
+# a[30] = 30       # updating 
+# a[40] = 450      # updating
+# print(a)        # 10: 1000, 20: 2500, 30: 30, 40: 450
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# # a.update({50: 500})    # 10: 100, 20: 200, 30: 300, 40: 400, 50: 500
+# print(a)    # Reading
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# a[50] = 5000     # creating 
+# print(a)   # 10: 100, 20: 200, 30: 300, 40: 400, 50: 5000
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# del a[30]   # delete
+# print(a)    # 10: 100, 20: 200, 40: 400
+
+# Dictionary traversing
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# for i in a:
+#     print(i)   # 10,20,30,40
+# for i in a.keys():       # keys nahi likho ge fir bhi keys hi print hoga
+#     print(i)   # 10,20,30,40
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# for i in a:
+#     print(a[i])   # 100 , 200 , 300 , 400
+# for i in a.values():
+#     print(i)    # 100 , 200 ,300 ,400
+
+# Dictionary Methods
+
+# help(dict)
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# a.clear()
+# print(a)     # {}
+
+
+# dcopy 
+# a = [1 ,2 ,3 ,4 ,5]
+# b = a 
+# b[0] = 11
+# print(a)     # 11,2,3,4,5
+
+# shallow copy
+a = [1 ,2 ,3 ,4 ,5]
+b = a.copy()
+b[0] = 18
+print(a)    # 1,2,3,4,5
+print(b)    # 18 ,2,3 ,4 ,5
