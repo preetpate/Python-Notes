@@ -1776,20 +1776,86 @@
 
 # help(dict)
 
+# clear
 # a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
 # a.clear()
 # print(a)     # {}
 
 
-# dcopy 
+# copy
+# Deep copy 
 # a = [1 ,2 ,3 ,4 ,5]
 # b = a 
 # b[0] = 11
 # print(a)     # 11,2,3,4,5
 
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# d = a
+# d[20] = 250
+# print(a)      # 10: 100, 20: 250, 30: 300, 40: 400
+# print(d)      # 10: 100, 20: 250, 30: 300, 40: 400}
+
 # shallow copy
-a = [1 ,2 ,3 ,4 ,5]
-b = a.copy()
-b[0] = 18
-print(a)    # 1,2,3,4,5
-print(b)    # 18 ,2,3 ,4 ,5
+# a = [1 ,2 ,3 ,4 ,5]
+# b = a.copy()
+# b[0] = 18
+# print(a)    # 1,2,3,4,5
+# print(b)    # 18 ,2,3 ,4 ,5
+
+# a = {10 : 100 , 20 : 200 , 30 : 300 , 40 : 400}
+# a1 = a.copy()
+# a1[10] = 1000
+# print(a)      # 10: 100, 20: 200, 30: 300, 40: 400
+# print(a1)   # 10: 1000, 20: 200, 30: 300, 40: 400
+
+# get
+# a = {10: 100, 20: 200, 30: 300, 40: 400}
+# b = a.get(20)     # get me jo bhi key enter karoge uss key ki value store ho jayegi variable me 
+# print(a)     # 10: 100, 20: 250, 30: 300, 40: 400
+# print(b)     # 200
+
+# items
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# b = a.items()
+# print(b)   # dict_items([(10, 100), (20, 250), (30, 300), (40, 400)])
+# print(a)    # {10: 100, 20: 250, 30: 300, 40: 400}
+
+# keys
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# print(a.keys())    # dict_keys([10, 20, 30, 40])
+
+# pop
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# k = a.pop(10)    
+# print(k)       # 100 , is value 
+# print(a)       # {20: 250, 30: 300, 40: 400}
+
+# popitem
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# k = a.popitem()
+# print(k)     # (40, 400)
+# print(a)     # {10: 100, 20: 250, 30: 300}
+
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# k, v = a.popitem()          # Tuple ko direct alag-alag variable me store karna
+# print("Removed Key:", k)    # 40
+# print("Removed Value:", v)  # 400
+# print("Remaining Dict:", a)  # {10: 100, 20: 250, 30: 300}
+
+# setdefault
+# a = {10: 100, 20: 250, 30: 300, 40 : 400}
+# k = a.setdefault(50)
+# print(k)      # None
+# print(a)      # {10: 100, 20: 250, 30: 300, 40: 400, 50: None}
+
+# update
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# a.update({50: 500, 20: 255})  # 50 naya hai, 20 ki value 250 se 255 ho jayegi
+# print(a)      # {10: 100, 20: 255, 30: 300, 40: 400, 50: 500}
+
+# values
+# a = {10: 100, 20: 250, 30: 300, 40: 400}
+# val_list = a.values()
+# print(val_list)      # ([100, 250, 300, 400])
+# # Direct list me convert karna ho toh:
+# print(list(a.values()))      # [100, 250, 300, 400]
