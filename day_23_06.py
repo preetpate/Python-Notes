@@ -1882,3 +1882,20 @@
 
 # write a program to sum all the values in dictionary
 
+# a = {10 : 100 , 20 : 200 , 30 : 300}
+# sum = 0
+# for i in a:
+#     sum = sum + a[i]
+# print(sum)     # 600 
+
+# Count the frequency of each element in list
+
+# a = [1,1,1,1,2,3,3,2,2,2,4,5,4,5,4,5,4,5,6,6,7,8,9,9]
+# b = {}
+# for i in a:
+#     if i in b.keys():
+#         b[i] += 1     # pahele i , a ki value ko pass karega means (1) an uske baad uske baad b[i] += 1 check karega ki 1 dict me he ya nahi ,nahi hoga to condition false ho jayegi and else me chali jayegi 
+#     else:
+#         b[i] = 1      # condition else me aa jayegi uske baad (1) pass ho jayega dict me , fir second value firse check hogi 
+# print(b)      # {1: 4, 2: 4, 3: 2, 4: 4, 5: 4, 6: 2, 7: 1, 8: 1, 9: 2}
+
