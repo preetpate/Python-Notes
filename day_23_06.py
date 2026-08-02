@@ -1859,3 +1859,26 @@
 # print(val_list)      # ([100, 250, 300, 400])
 # # Direct list me convert karna ho toh:
 # print(list(a.values()))      # [100, 250, 300, 400]
+
+
+# practice questions
+
+# write the python script to merge two python dictionary
+
+# d1 = {10 : 100 , 20 : 200 , 30 : 300}
+# d2 = {40 : 400 , 50 : 500 , 60 : 600}
+# for i in d2:
+#     d1[i] = d2[i]
+# print(d1)     # {10: 100, 20: 200, 30: 300, 40: 400, 50: 500, 60: 600}
+# for j in d1:
+#     d2[j] = d1[j]
+# print(d2)     # {40: 400, 50: 500, 60: 600, 10: 100, 20: 200, 30: 300}
+
+# d1 = {10 : 100 , 20 : 200 , 40 : 300}    
+# d2 = {40 : 400 , 50 : 500 , 60 : 600}
+# for i in d2:
+#     d1[i] = d2[i]      # yeh value ko automatically update kar dega 
+# print(d1)     # {10: 100, 20: 200, 40: 400, 50: 500, 60: 600}
+
+# write a program to sum all the values in dictionary
+
