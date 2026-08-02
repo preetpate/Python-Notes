@@ -1888,6 +1888,12 @@
 #     sum = sum + a[i]
 # print(sum)     # 600 
 
+# a = {11 : 111 , 22 : 222 , 33 : 333 , 44 : 444}
+# sum = 0
+# for i in a:
+#     sum += a[i]
+# print(sum)     # 1110
+
 # Count the frequency of each element in list
 
 # a = [1,1,1,1,2,3,3,2,2,2,4,5,4,5,4,5,4,5,6,6,7,8,9,9]
@@ -1899,3 +1905,98 @@
 #         b[i] = 1      # condition else me aa jayegi uske baad (1) pass ho jayega dict me , fir second value firse check hogi 
 # print(b)      # {1: 4, 2: 4, 3: 2, 4: 4, 5: 4, 6: 2, 7: 1, 8: 1, 9: 2}
 
+# write a python program to combine two dictionary by values for common keys.
+
+# d1 = {10 : 100 , 20 : 200 , 40 : 300}    
+# d2 = {40 : 400 , 50 : 500 , 60 : 600}
+# for i in d2:
+#     if i in d1.keys():
+#         d1[i] += d2[i]      # jo key comman hogi uski value ka sum kar degi
+#     else :
+#         d1[i] = d2[i]
+# print(d1)       # 10: 100, 20: 200, 40: 700, 50: 500, 60: 600}
+
+
+# Exception Handling 
+
+# Error :
+# Error occur due to mistakes in the code that prevent it form running . these can be syntax error or logical error 
+
+# print("Hello, My name is Preet"       # this is code error , it's syntax error
+# print("Hello , my name is Preet")     # it's perfact 
+
+# def func():
+# print("Hello")          # it's indentation error 
+# func()
+
+# def func():
+#    print("Hello")          # it's perfact code  
+# func()
+
+# a = int(input("Enter the number :-"))      # if me (0) ko enter karunga to okk, i have a done wala bhi print nahi hoga , it's a exception
+# print(10/a)        
+# print("Okk , i have a done the program")
+
+# Exceptions 
+# Exception are unexpected events or errors that occurs during the execution of a program, which disrupts the normal flow of the program
+
+# Exception Handling 
+# keywords                        Purpose 
+# try                       Wrap the block of code that might cause an exception
+# except                    Handle the exception if it occurs
+# else                      run code only if no exception eccurs
+# finally                   run code no matter what , whether there's an exception or not 
+# raise                     manually throw an exception
+
+
+# Try   &    Except
+# a = int(input("Enter the number :-"))
+# try :
+#     print(10/a)
+# except ZeroDivisionError:
+#     print("Sorry you can not divide with 0")     # agar (0) enter kiya to yeh print hoga , agar koi our value enter ki toh nahi hoga 
+# print("Okk , complete the division") 
+
+# a = int(input("Enter the number :-"))
+# try :
+#     print(10/a)
+# except Exception as err:        # err is variable , variable me jo name likhna he likh sakte ho
+#     print(f"Sorry this err is : {err}")     # is err se pata chal jayega ki error konsi he 
+# print("Okk , complete the division")      # Sorry this err is : division by zero
+
+# a = input("Enter the number :-")
+# try :
+#     print(10 / a)     # kuch bhi string me likh sakte ho 
+# except Exception as err:        
+#     print(f"Sorry this err is : {err}")     # Sorry this err is : unsupported operand type(s) for /: 'int' and 'str'
+# print("Okk , complete the division")        # Okk , complete the divition ,  last me yeh run to ho raha he 
+
+# Else 
+# a = int(input("Enter the number :-"))
+# try :
+#     print(10/a)
+# except Exception as ero :       # agar except run huva to else run nahi hoga , and else run huva toh except run nahi hoga 
+#     print(f'This error is a : {ero}')
+# else :
+#     print("It's good for no exeption")
+# print("Okk , Complete devision")
+
+# Finally
+# a = int(input("Enter the number :-"))
+# try :
+#     print(10/a)
+# except Exception as ero :       
+#     print(f'This error is a : {ero}')
+# else :
+#     print("It's good for no exeption")
+# finally :                                    # finally me kuchh bhi likhoge woh hamesa run hoga , except, else kuchh run ho ya na ho
+#     print("I will run no matter what you thing")     
+# print("Okk , Complete devision") 
+
+# Raise
+age = int(input("Enter your Age :-"))
+if age < 10 or age > 18 :
+    raise ValueError("Your age must be between 10 and 18")
+else :
+    print("Welcome to the club")
+print("This club is starting soon")       # yeh run nahi huva he kyoki error khud genrate ki gai he raise valueerror se 
