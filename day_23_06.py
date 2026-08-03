@@ -1994,9 +1994,51 @@
 # print("Okk , Complete devision") 
 
 # Raise
-age = int(input("Enter your Age :-"))
-if age < 10 or age > 18 :
-    raise ValueError("Your age must be between 10 and 18")
-else :
-    print("Welcome to the club")
-print("This club is starting soon")       # yeh run nahi huva he kyoki error khud genrate ki gai he raise valueerror se 
+# age = int(input("Enter your Age :-"))
+# if age < 10 or age > 18 : 
+#     raise ValueError("Your age must be between 10 and 18")    # raise se error genrate hoti he 
+# else :
+#     print("Welcome to the club")
+# print("This club is starting soon")       # yeh run nahi huva he kyoki error khud genrate ki gai he raise valueerror se 
+
+# age = int(input("Enter your Age :-"))
+# try:
+#     if age < 10 or age > 18:
+#         raise ValueError("Your age must be between 10 and 18")
+#     else :
+#         print("Welcome to the club")
+# except Exception as err:
+#     print(f"An error occured as : {err}")
+# print("The club is starting soon") 
+
+
+# File Handling 
+# You all know what are file any name with an extention is file.
+# now that extention can be .py , .txt , .mp3 etc. and when we want to handle these files we will use file handling.
+
+# File Handling
+# file handling means creating , reading , updating, deleting(CRUD) operations that we can perform in file.
+# now lets see how to perform these operations in python.
+# we have to use open() function to open a file in python.
+
+# example , koi bahar file read karni ho to uss file ka path copy karke paste karna padta he , but woh system me honi chahiye 
+# a = open(r'C:\Users\Patel\OneDrive\Desktop\first.py')    # (r) use hota he for raw string ke liye , beacuse path (\) use hote he iss liye 
+# print(a.read())
+
+# a = open('day_23_06.py')      # iss me tum (r) use nahi karoge fir bhi chalega 
+# print(a.read())
+
+
+# Now there are multiple modes to open the file.
+
+# Mode         Description
+# 'r'       Read(default) - file must exist.
+# 'w'       write - creates file or overwrites.
+# 'a'       Append - adds to end of file.
+# 'x'       Create - creates a new file , fails if it exists.
+
+
+# Write 
+a = open("Preet.txt" , 'w')     # 'w' is file mode(default mode)
+a.write("Hello , friends my name is preet and i am learning python")
+a.close()      # close nahi karunga to bydefault open hi rahega 
