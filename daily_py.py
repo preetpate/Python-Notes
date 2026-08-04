@@ -2021,12 +2021,6 @@
 # now lets see how to perform these operations in python.
 # we have to use open() function to open a file in python.
 
-# example , koi bahar file read karni ho to uss file ka path copy karke paste karna padta he , but woh system me honi chahiye 
-# a = open(r'C:\Users\Patel\OneDrive\Desktop\first.py')    # (r) use hota he for raw string ke liye , beacuse path (\) use hote he iss liye 
-# print(a.read())
-
-# a = open('day_23_06.py')      # iss me tum (r) use nahi karoge fir bhi chalega 
-# print(a.read())
 
 
 # Now there are multiple modes to open the file.
@@ -2037,8 +2031,62 @@
 # 'a'       Append - adds to end of file.
 # 'x'       Create - creates a new file , fails if it exists.
 
+# example , koi bahar file read karni ho to uss file ka path copy karke paste karna padta he , but woh system me honi chahiye 
+# a = open(r'C:\Users\Patel\OneDrive\Desktop\first.py')    # (r) use hota he for raw string ke liye , beacuse path (\) use hote he iss liye 
+# print(a.read())
+
+# Read
+# a = open('day_23_06.py')      # iss me tum (r) use nahi karoge fir bhi chalega 
+# print(a.read())
 
 # Write 
-a = open("Preet.txt" , 'w')     # 'w' is file mode(default mode)
-a.write("Hello , friends my name is preet and i am learning python")
-a.close()      # close nahi karunga to bydefault open hi rahega 
+# a = open("Preet.txt" , 'w')     # 'w' is file mode(default mode)   , w woh overwriting karta he , agar koi text change karege to purana text remove ho jayega
+# a.write("Hello , friends my name is preet and i am learning python")
+# a.close()      # close nahi karunga to bydefault open hi rahega 
+
+# a = open("hello.py" , 'w')     # 'w' me aap jitni bar run karoge to ye utni bar print nahi hoga file ke under
+# a.write('print("Hello, this is my python file")')   # iss me ek our bhi python me ki agar menhe ek hi string me [''] use kiya he to mujhe baad me [""] hi use karna padega
+# a.close()
+
+# Read
+# a = open('hello.py')
+# print(a.read())    # print("Hello, this is my python file")
+
+
+# Append
+# a = open("Preet.txt" , 'a')
+# a.write("\nOkk , this is only for your practice and i used append means [a]")   # iss ko aap jitni bar run karoge yeh utni bar print hoga file me 
+# a.close()
+
+# read
+# a = open('Preet.txt' , 'r')
+# print(a.read())
+
+# a = open('hello.py', 'a')
+# a.write("\na = 10")
+# a.write('\nb = a')
+# a.write('\nprint(b)')
+# a = open('hello.py')
+# print(a.read())
+# a.close()
+
+# Create (x)
+# a = open("Tirht.txt" , 'x')     # iss me overwrite nahi kar sakta means , ek bar file ban gai ans uss time par menhe kuchh bhi text me na likha ho toh uske baad tum nahi likh sakte
+# a.close()
+
+# a = open("hyy.txt" , 'x')
+# a.write("okk, to menhe iss ko file banane ke time par hi likha diya he to yeh to run ho, but overwrite nahi hoga")
+# a.close()
+
+
+# with open('hyy.txt') as fal:     # agar tumhe file close karni he toh second method yeh raha , upper ke code me variable name.close() likh kar file close karte the 
+#     content = fal.read()       # toh close ka use nahi karhe to yeh method bhi use kar sakte ho
+#     print(content)
+
+# with open('Preet.txt' , 'a') as p:
+#     my_choice = p.write('\nThis is my choice , yeh close lagaye bina program bana raha hu okk')
+#     print(my_choice)
+
+# with open('Preet.txt') as pi:
+#     hyy = pi.read()
+#     print(hyy)
