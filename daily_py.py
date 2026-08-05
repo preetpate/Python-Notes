@@ -2090,3 +2090,5 @@
 # with open('Preet.txt') as pi:
 #     hyy = pi.read()
 #     print(hyy)
+
+# Now lets create a basic file handling project .
