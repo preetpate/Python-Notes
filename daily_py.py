@@ -2091,4 +2091,4 @@
 #     hyy = pi.read()
 #     print(hyy)
 
-# Now lets create a basic file handling project .
+# Now lets create a basic file handling project.
