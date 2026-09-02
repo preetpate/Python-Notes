@@ -2094,10 +2094,11 @@
 
 # Enumerate()
 
-# names = ["Preet", "Rahul", "Amit"]
-# for index, name in enumerate(names):
-#     print(index, name)         # 0 Preet , 1 rahul , 2 amit
+names = ["Preet", "Rahul", "Amit"]
+for index, name in enumerate(names):
+    print(index, name)         # 0 Preet , 1 rahul , 2 amit
 
 
 # Now lets create a basic file handling project.
+
 
