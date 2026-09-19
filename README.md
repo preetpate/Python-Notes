@@ -28,4 +28,8 @@ To build a strong foundation in Python for **Data Science, Machine Learning, and
 
 I am a Data Science student passionate about Python, Machine Learning, Deep Learning, and Artificial Intelligence. This repository tracks my learning journey and daily coding practice.
 
+## Author Name
+
+Prit Patel
+
 ⭐ Thank you for visiting my repository!
