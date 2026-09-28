@@ -2094,11 +2094,100 @@
 
 # Enumerate()
 
-names = ["Preet", "Rahul", "Amit"]
-for index, name in enumerate(names):
-    print(index, name)         # 0 Preet , 1 rahul , 2 amit
+# names = ["Preet", "Rahul", "Amit"]
+# for index, name in enumerate(names):
+#     print(index, name)         # 0 Preet , 1 rahul , 2 amit
 
 
-# Now lets create a basic file handling project.
+
+# OOPs :- Object Oriented Programming
+
+# Imperative Approch menas : direct value add karna 
+
+# a=12
+# b=12
+# print(a+b)  
+
+# Functional approch means :
+
+# def addition(a,b):
+#     print(a+b)
+# addition(12,12)
+# addition(58,56)
+# here the good thing is we can add multiple numbers without using multiple variable.
+
+# OOPs approch
+# OOPs is programming paradigm based on the concept of 'object'. which can contain data (attributes) and code(methods).
+# there are many concepts that we have to learn like classes,objects, encapsulation, inheritance, polymorphism, etc  
+
+# OOPs me achhi baat yeh he ki 1) yeh code ko reuseble banata he our multiple values ko exicute kar sakte ho
+# 2) yeh security provide karta he 
+# 3) jab aap OOPs banate ho toh managment ke bahot kam aata he , like bank management, library management
 
 
+# Classes IN OOPs
+# A classes is like a blueprint or template for creating objects.
+
+# creating class is super simple now lets see what is inside class. There are 2 types of things inside class Attributes and methods.
+# Attribute :- variables defined inside the class are attribute.
+# Methods :- Functions defined inside a class are methods.
+
+# class Factory:
+#     a = 12     # attribute
+# # self is keyword
+#     def hello(self):   # method    
+#         print("How are you")
+
+#     print("hello how are you i am initialized")      # open statement, jab aap class create karte ho our function paheli baar run karte ho,
+#     # toh usme sari ki sari value 1 baar run hoti he, usme attribute,method our open statement sab run ho jata he 
+
+# print(Factory().a)     # iss me pahle factory class ko call karoge , uske bad .a likhoge 
+# Factory().hello()
+
+
+# class Animal:
+#     type = "Cat"    # attribute
+
+#     def sound(self):    # method
+#         print("Meow!")
+# #Directly accessing attribute and method using the class
+# print(Animal().type)       # Access attribute
+# Animal().sound()      # call method
+
+
+# OBJECTS
+# it is very easy to create an object you just have to call the class inside a variable and that variable becomes an object.
+# the object has all the powers of a class therefore a class object can access attributes and methods of a class.
+
+# Object ka koi specific syntax nahi hota he  
+
+# class Factory:
+#     a = 12     # attribute
+
+#     def hello(self):    # method
+#         print("how are you")
+
+# obj = Factory()     # obj ke pass power he , class ko cces karne ki 
+# print(obj.a)
+# obj.hello()
+# print()
+
+# obj2 = Factory()
+# print(obj.a)
+# obj.hello()
+# print()
+
+# obj3 = Factory()     
+# print(obj.a)
+# obj.hello()
+
+
+# Constructor
+# A constructor is a method that runs automatically when we call a class and this constructor function will target the objects location.
+
+
+class Factory():
+    def __init__(self,material, zips, pockets):      #__init__ is method
+        pass
+
+Factory("leather", 3,2)
