@@ -2164,7 +2164,7 @@
 # class Factory:
 #     a = 12     # attribute
 
-#     def hello(self):    # method
+#     def hello(self):    # method, self is keyword
 #         print("how are you")
 
 # obj = Factory()     # obj ke pass power he , class ko cces karne ki 
@@ -2186,8 +2186,28 @@
 # A constructor is a method that runs automatically when we call a class and this constructor function will target the objects location.
 
 
-class Factory():
-    def __init__(self,material, zips, pockets):      #__init__ is method
-        pass
+# class Factory():
+#     def __init__(self,material, zips, pockets):      #__init__ is method, self target a location
+#         # print(self)     # <__main__.Factory object at 0x000001A4F0AA7380>
+#         self.material = material
+#         self.zips = zips
+#         self.pockets = pockets
 
-Factory("leather", 3,2)
+#     def show(self):       # method, dender method
+#         print(f'your object details are {self.material},{self.pockets},{self.zips}')
+
+# reebok = Factory("leather", 3,2)   # reebook is object , and object me factory class ko call kar diya he 
+# # if self value 100 , so material,zips and pockets value is also 100
+# campus = Factory('nylon',3,3)
+
+# # print(reebok.pockets)
+# # print()
+# # print(campus.pockets)
+
+# reebok.show()      # show kya karega ki , show function ko call karega our print ko print karega 
+
+
+# Types of Attribute 
+# Class Attribute :- A normal variable created inside a class is a class attribute and thats it.
+# instance Attribute :- A Attribute created using an instance like self.name, self.age etc. it is known as instance attribute.
+
